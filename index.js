@@ -12,45 +12,45 @@ const questions = [{
     },
     {
         type: 'input',
-        message: 'Provide short description about the project',
+        message: 'Do you have short description about the project ?',
         name: 'discription',
     },
     {
         type: 'input',
-        message: 'What are the installation steps ?',
+        message: 'Do are the installation details ?',
         name: 'installation',
     },
     {
         type: 'input',
-        message: 'What are the usage details ?',
-        name: 'usuage',
+        message: 'What are the usage steps ?',
+        name: 'usage',
     },
-    // {
-    //     type: 'checkbox',
-    //     message: 'What is your license type ?',
-    //     name: 'license',
-    //     choices: ['apache-2.0', 'Boost','IBM', 'MIT', 'ISC', 'Mozzilla']
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'what are contribution details ?',
-    //     name: 'contribution',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'FAQ section ?',
-    //     name: 'questions',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'what is your GitHub username ?',
-    //     name: 'username', 
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'what is your email address ?',
-    //     name: 'email', 
-    // }
+    {
+        type: 'input',
+        message: 'what are contribution details ?',
+        name: 'contribution',
+    },
+    {
+        type: 'input',
+        message: 'If applicable, please provide test steps?',
+        name: 'test',
+    },
+    {
+        type: 'checkbox',
+        message: 'What is project license type ?',
+        name: 'license',
+        choices: ['Boost','IBM', 'MIT', 'ISC', 'none']
+    },
+    {
+        type: 'input',
+        message: 'what is your GitHub username ?',
+        name: 'username', 
+    },
+    {
+        type: 'input',
+        message: 'what is your email address ?',
+        name: 'email', 
+    }
 
 ]
 
@@ -72,10 +72,3 @@ inquirer.prompt(questions)
 
 // Function call to initialize app
 init();
-
-
-
-
-// console.log(data)
-// const {title, discription, installation} = data
-// console.log(title, discription, installation)
