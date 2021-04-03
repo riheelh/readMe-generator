@@ -44,56 +44,109 @@ function generateMarkdown(data) {
   var newBadge = renderLicenseBadge(data.license)
   var section = renderLicenseSection(data.license)
 
+  if(data.discription !== '') {
+    var Desc = `
+## Description  
+${data.discription}`
+  } else {
+    Desc = ``
+  }
+
+  if(data.installation !== '') {
+    var installTOC = `- [Installation](#Installation)<br>`
+    var installation = `
+## Installation  
+${data.installation}`
+  } else {
+    installation = ``
+    installTOC = ``
+  }
+
+  if(data.usage !== '') {
+    var usageTOC = `- [Usage](#Usage)<br>`
+    var usage = `
+## Usage  
+${data.usage}`
+  } else {
+    usage = ``
+    usageTOC = ``
+  }
+
+  if(data.contribution !== '') {
+    var contributionTOC = `- [Contributing](#Contributing)<br>`
+    var contribution = `
+## Contributing
+${data.contribution}`
+  } else {
+     contribution = ``
+     contributionTOC = ``
+  }
+
+  if(data.test !== '') {
+    var testTOC = `- [Tests](#Tests)<br>`
+    var test = `
+## Tests
+${data.test}`
+  } else {
+    test = ``
+    testTOC = ``
+  }
+
+  if(data.license !== '') {
+    var licenseTOC = `- [License](#License)<br>`
+    var section2 = `
+## License
+${section}`
+  } else {
+    section2 = ``
+    licenseTOC = ``
+  }
+
+  if(data.username !== '' || data.email !== '') {
+    var questionTOC = `- [Questions](#Questions)`
+    var question = `
+## Questions
+Github: [@${data.username}](www.github.com/${data.username}) <br>
+Email: ${data.email}`
+
+  } else {
+    question = ``
+    questionTOC = ``
+  }
+
   return `
 # ${data.title}
 
 ${newBadge}
 
-## Discription
-
-${data.discription}
- 
+${Desc}
 
 ## Table of Contents
 
+${installTOC}
+${usageTOC}
+${contributionTOC}
+${testTOC}
+${licenseTOC}
+${questionTOC}
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [License](#License)
-- [Questions](#Questions)
-
-
-## Installation
-
-${data.installation}
-  
-
-## Usage
-
-${data.usage}
+${installation}
 
 
-## Contributing
-
-${data.contribution}
+${usage}
 
 
-## Tests
-
-${data.test}
+${contribution}
 
 
-## License
-
-${section}
+${test}
 
 
-## Questions
+${section2}
 
-Github: [@${data.username}](www.github.com/${data.username})<br>
-Email: ${data.email}
+
+${question}
+
 `;
 }
 
