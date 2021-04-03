@@ -48,10 +48,14 @@ function generateMarkdown(data) {
 # ${data.title}
 
 ${newBadge}
+
 ## Discription
+
 ${data.discription}
  
+
 ## Table of Contents
+
 
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -60,22 +64,34 @@ ${data.discription}
 - [License](#License)
 - [Questions](#Questions)
 
+
 ## Installation
+
 ${data.installation}
   
+
 ## Usage
+
 ${data.usage}
 
+
 ## Contributing
+
 ${data.contribution}
 
+
 ## Tests
+
 ${data.test}
 
+
 ## License
+
 ${section}
 
+
 ## Questions
+
 Github: [@${data.username}](www.github.com/${data.username})<br>
 Email: ${data.email}
 `;
