@@ -39,7 +39,7 @@ const questions = [{
         type: 'checkbox',
         message: 'What is project license type ?',
         name: 'license',
-        choices: ['Boost','MIT', 'ISC', 'IBM', 'none']
+        choices: ['Boost','MIT', 'ISC', 'IBM', 'None']
     },
     {
         type: 'input',
