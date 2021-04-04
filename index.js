@@ -60,15 +60,18 @@ const init = () => {
 inquirer.prompt(questions)
     .then((data) => {
         // const newfile = util()
-        fs.writeFile('newREADME.md', util(data), (err) =>
-        err ? console.error(err) : console.log ('file generated!!'))
+        writeToFile(`${data.title}.md`, data)
     })
     .catch((err) => console.error(err));
 }
 
 
 // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return  fs.writeFile(fileName, util(data), (err) => 
+    err ? console.error(err) : console.log ('file generated!!'))
+}
+
 
 // Function call to initialize app
 init();
