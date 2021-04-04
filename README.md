@@ -1,11 +1,11 @@
+# ReadMe file generator 
 
-# Demo Project
-
-[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Description  
-blah blah blah
+A node.js application helps to generate profissional ReadME file for github projects.
+
 
 ## Table of Contents
 
@@ -18,33 +18,31 @@ blah blah blah
 
 
 ## Installation  
-npm install
-
+Open terminal then change to project directory and run npm install to generate package.json.
 
 
 ## Usage  
-ususus
+Open terminal and change to project directory and run node . and nnswer the prompt questions to generate the ReadMe file.
 
-
+### Video Demo
+[![IMAGE ALT TEXT HERE](./assets/ReadMe.PNG)](https://www.youtube.com/watch?v=xoqdDpXdCs0)
 
 ## Contributing
-ccccccc
+To contribue to add feature and report bugs, please check on Issues section.
 
 
 
 ## Tests
-eeeee
-
+N/A
 
 
 ## License
 
-[IBM](https://opensource.org/licenses/IPL-1.0)
+[MIT](https://opensource.org/licenses/MIT)
 
 
 
 
 ## Questions
 Github: [@riheelh](www.github.com/riheelh) <br>
-Email: yahoo
-
+Email: info@demo.com
