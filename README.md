@@ -24,12 +24,9 @@ Open terminal then change to project directory and run npm install to generate p
 ## Usage  
 Open terminal and change to project directory and run node . and nnswer the prompt questions to generate the ReadMe file.
 
-### Video Demo
-[![IMAGE ALT TEXT HERE](./assets/ReadMe.PNG)](https://www.youtube.com/watch?v=xoqdDpXdCs0)
 
 ## Contributing
 To contribue to add feature and report bugs, please check on Issues section.
-
 
 
 ## Tests
